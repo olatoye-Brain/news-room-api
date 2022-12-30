@@ -24,6 +24,12 @@ app.use(router)
 const NewsAPI = require('newsapi')
 const newsapi = new NewsAPI(process.env.KEY);
 
+router.get('/', (req, res) =>{
+    res.send(`
+        NewsRoom api
+`)
+})
+
 // To query top headlines
 // All options passed to topHeadlines are optional, but you need to include at least one of them
 router.get('/top-news', (req, res)=>{
