@@ -32,7 +32,7 @@ router.get('/', (req, res) =>{
 
 // To query top headlines
 // All options passed to topHeadlines are optional, but you need to include at least one of them
-router.get('/top-news', (req, res)=>{
+router.get('/api/', (req, res)=>{
     newsapi.v2.topHeadlines({
       category: 'general',
       language: 'en',
@@ -43,7 +43,7 @@ router.get('/top-news', (req, res)=>{
     });
 })
 
-router.get('/top-news/:category', (req, res) => {
+router.get('/api/:category', (req, res) => {
     const { category } = req.params
         newsapi.v2.topHeadlines({
         category: category,

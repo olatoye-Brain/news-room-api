@@ -1,9 +1,7 @@
 
 ###
-http://localhost:3000/top-news/sport
+http://localhost:3000/api/sport
 
 ###
-http://localhost:3000/top-news
+http://localhost:3000/api
 
-###
-https://news-room-api.vercel.app/top-news
